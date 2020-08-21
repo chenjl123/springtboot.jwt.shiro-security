@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cn.shiro.mapper.SUserRoleMapper">
+
+   <!--添加角色-->
+    <insert id="addUserRole" parameterType="com.cn.shiro.model.SUserRole">
+        insert into s_user_role(user_id,role_id) values (#{userId},#{roleId})
+    </insert>
+</mapper>
